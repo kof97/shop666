@@ -88,6 +88,11 @@ $isGuest = Yii::$app->user->isGuest;
                     <div class="reg">
                         <a href="<?= Yii::$app->urlManager->createUrl(['site/register']) ?>">REGISTER</a>
                     </div>
+                <?php else: ?>
+                    <div class="reg">
+                        <a href="<?= Yii::$app->urlManager->createUrl(['site/']) ?>">LOGOUT</a>
+                    </div>
+        
                 <?php endif ?>
 
                 <div class="cart box_1">
