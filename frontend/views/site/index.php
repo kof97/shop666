@@ -2,52 +2,117 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'shop666';
 ?>
-<div class="site-index">
-
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
-        </div>
-
-    </div>
+<div class="arriv">
+	<div class="container">
+		<div class="arriv-top">
+			<div class="col-md-6 arriv-left">
+				<img src="images/1.jpg" class="img-responsive" alt="">
+				<div class="arriv-info">
+					<h3>NEW ARRIVALS</h3>
+					<p>REVIVE YOUR WARDROBE WITH CHIC KNITS</p>
+					<div class="crt-btn">
+						<a href="details.html">TAKE A LOOK</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 arriv-right">
+				<img src="images/2.jpg" class="img-responsive" alt="">
+				<div class="arriv-info">
+					<h3>TUXEDO</h3>
+					<p>REVIVE YOUR WARDROBE WITH CHIC KNITS</p>
+					<div class="crt-btn">
+						<a href="details.html">SHOP NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="arriv-bottm">
+			<div class="col-md-8 arriv-left1">
+				<img src="images/3.jpg" class="img-responsive" alt="">
+				<div class="arriv-info1">
+					<h3>SWEATER</h3>
+					<p>REVIVE YOUR WARDROBE WITH CHIC KNITS</p>
+					<div class="crt-btn">
+						<a href="details.html">SHOP NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 arriv-right1">
+				<img src="images/4.jpg" class="img-responsive" alt="">
+				<div class="arriv-info2">
+					<a href="details.html"><h3>Trekking Shoes<i class="ars"></i></h3></a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="arriv-las">
+			<div class="col-md-4 arriv-left2">
+				<img src="images/5.jpg" class="img-responsive" alt="">
+				<div class="arriv-info2">
+					<a href="details.html"><h3>Casual Glasses<i class="ars"></i></h3></a>
+				</div>
+			</div>
+			<div class="col-md-4 arriv-middle">
+				<img src="images/6.jpg" class="img-responsive" alt="">
+				<div class="arriv-info3">
+					<h3>FRESH LOOK T-SHIRT</h3>
+					<div class="crt-btn">
+						<a href="details.html">SHOP NOW</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 arriv-right2">
+				<img src="images/7.jpg" class="img-responsive" alt="">
+				<div class="arriv-info2">
+					<a href="details.html"><h3>Elegant Watches<i class="ars"></i></h3></a>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="special">
+	<div class="container">
+		<h3>Special Offers</h3>
+		<div class="specia-top">
+			<ul class="grid_2">
+		<li>
+				<a href="details.html"><img src="images/8.jpg" class="img-responsive" alt=""></a>
+				<div class="special-info grid_1 simpleCart_shelfItem">
+					<h5>Lorem ipsum dolor</h5>
+					<div class="item_add"><span class="item_price"><h6>ONLY $40.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+				</div>
+		</li>
+		<li>
+				<a href="details.html"><img src="images/9.jpg" class="img-responsive" alt=""></a>
+				<div class="special-info grid_1 simpleCart_shelfItem">
+					<h5>Consectetur adipis</h5>
+					<div class="item_add"><span class="item_price"><h6>ONLY $60.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+			</div>
+		</li>
+		<li>
+				<a href="details.html"><img src="images/10.jpg" class="img-responsive" alt=""></a>
+				<div class="special-info grid_1 simpleCart_shelfItem">
+					<h5>Commodo consequat</h5>
+					<div class="item_add"><span class="item_price"><h6>ONLY $14.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+			</div>
+		</li>
+		<li>
+				<a href="details.html"><img src="images/11.jpg" class="img-responsive" alt=""></a>
+				<div class="special-info grid_1 simpleCart_shelfItem">
+					<h5>Voluptate velit</h5>
+					<div class="item_add"><span class="item_price"><h6>ONLY $37.00</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">add to cart</a></span></div>
+				</div>
+		</li>
+		<div class="clearfix"> </div>
+	</ul>
+		</div>
+	</div>
 </div>
