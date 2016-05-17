@@ -13,7 +13,8 @@ class RegisterForm extends Model
 	public $email;
 	public $sex;
 	public $password;
-	public $_csrf;
+	
+	private $_csrf;
 
 	/**
      * @inheritdoc

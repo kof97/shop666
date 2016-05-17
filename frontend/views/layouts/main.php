@@ -62,11 +62,15 @@ $isGuest = Yii::$app->user->isGuest;
             <div class="header_right">
                 <div class="rgt-bottom">
                 <?php if ($isGuest): ?>
-                    <div class="log">
+                    <div class="reg right">
+                        <a href="<?= Yii::$app->urlManager->createUrl(['site/register']) ?>">REGISTER</a>
+                    </div>
+                    <div class="log right">
                         <div class="login" >
                             <div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
                                 <div id="loginBox">                
-                                    <form id="loginForm">
+                                    <form id="loginForm" action="<?= Yii::$app->urlManager->createUrl(['site/login']) ?>" method="post">
+                                            <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
                                             <fieldset id="body">
                                                 <fieldset>
                                                       <label for="email">Email Address</label>
@@ -77,7 +81,7 @@ $isGuest = Yii::$app->user->isGuest;
                                                         <input type="password" name="password" id="password">
                                                  </fieldset>
                                                 <input type="submit" id="login" value="Sign in">
-                                                <label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+                                                <!--label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label-->
                                             </fieldset>
                                         <span><a href="#">Forgot your password?</a></span>
                                     </form>
@@ -85,26 +89,25 @@ $isGuest = Yii::$app->user->isGuest;
                             </div>
                         </div>
                     </div>
-                    <div class="reg">
-                        <a href="<?= Yii::$app->urlManager->createUrl(['site/register']) ?>">REGISTER</a>
-                    </div>
                 <?php else: ?>
-                    <div class="reg">
-                        <a href="<?= Yii::$app->urlManager->createUrl(['site/']) ?>">LOGOUT</a>
+                    <div class="reg create_btn">
+                        <form action="<?= Yii::$app->urlManager->createUrl(['site/logout']) ?>" method="post">
+                            <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
+                            <input class="inputa" type="submit" value="LOGOUT">
+                        </form>
                     </div>
-        
+                
+                    <div class="cart box_1">
+                        <a href="checkout.html">
+                            <h3> <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)<img src="images/bag.png" alt=""></h3>
+                        </a>    
+                        <p><a href="javascript:;" class="simpleCart_empty">(empty card)</a></p>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="create_btn">
+                        <a href="checkout.html">CHECKOUT</a>
+                    </div>
                 <?php endif ?>
-
-                <div class="cart box_1">
-                    <a href="checkout.html">
-                        <h3> <span class="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)<img src="images/bag.png" alt=""></h3>
-                    </a>    
-                    <p><a href="javascript:;" class="simpleCart_empty">(empty card)</a></p>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="create_btn">
-                    <a href="checkout.html">CHECKOUT</a>
-                </div>
                 <div class="clearfix"> </div>
             </div>
             <div class="search">

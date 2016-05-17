@@ -94,15 +94,16 @@ $this->title = 'register';
 		<h2>existing user</h2>
 		 <div class="registration_form">
 		 <!-- Form -->
-			<form id="registration_form" action="contact.php" method="post">
+			<form id="registration_form" action="<?= Yii::$app->urlManager->createUrl(['site/login']) ?>" method="post">
+                <input name="_csrf" type="hidden" id="_csrf" value="<?= Yii::$app->request->csrfToken ?>">
 				<div>
 					<label>
-						<input placeholder="email:" type="email" tabindex="3" required>
+						<input placeholder="email:" name="email" type="email" tabindex="3" required>
 					</label>
 				</div>
 				<div>
 					<label>
-						<input placeholder="password" type="password" tabindex="4" required>
+						<input placeholder="password" name="password" type="password" tabindex="4" required>
 					</label>
 				</div>						
 				<div>
